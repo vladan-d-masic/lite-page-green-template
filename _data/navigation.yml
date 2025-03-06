@@ -1,0 +1,6 @@
+- name: Glavna
+  link: /
+- name: Cene
+  link: /pricing.markdown
+- name: Blog
+  link: /blog.html
