@@ -2,22 +2,10 @@ address: Ulica Poljoprivrednika 12, Beograd, Srbija
 images:
   - url: "/assets/images/apples.jpg"
     alt: "Jabuke"
-  - url:
-    alt:
-  - url:
-    alt:
-  - url:
-    alt:
-  - url:
-    alt:
-  - url:
-    alt:
-  - url:
-    alt:
-  - url:
-    alt:
-  - url:
-    alt:
+  - url: "/assets/images/lettuce.jpg"
+    alt: "Zelena salata"
+  - url: "/assets/images/tomato_juice.jpg"
+    alt: "Mleveni paradajz"
 
 _scheme:
   address: text
