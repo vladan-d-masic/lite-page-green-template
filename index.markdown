@@ -3,6 +3,9 @@ layout: default
 title: Poljoprivredni proizvodi
 ---
 {% include navigation.html %}
+
+{{ site | jsonify }}
+{{ page | inspect }}
 <section id="proizvodi" class="container my-5">
         <h2 class="text-center mb-4">Naši proizvodi</h2>
         <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
