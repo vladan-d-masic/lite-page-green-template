@@ -8,7 +8,7 @@ title: Poljoprivredni proizvodi
         <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active text-center">
-                    <img src="/assets/images/apples.jpg" class="d-block mx-auto" alt="Jabuke">
+                    <img src="{{ site.base_url }}/assets/images/apples.jpg" class="d-block mx-auto" alt="Jabuke">
                     <p class="mt-2">Jabuke</p>
                 </div>
                 <div class="carousel-item text-center">
