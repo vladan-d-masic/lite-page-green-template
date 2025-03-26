@@ -8,18 +8,12 @@ title: Poljoprivredni proizvodi
         <h2 class="text-center mb-4">{{ site.data.i18n.our_products }}</h2>
         <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active text-center">
-                    <img src="{{ site.baseurl }}/assets/images/apples.jpg" class="d-block mx-auto" alt="Jabuke">
-                    <p class="mt-2">Jabuke</p>
-                </div>
-                <div class="carousel-item text-center">
-                    <img src="/assets/images/lettuce.jpg" class="d-block mx-auto" alt="Zelena salata">
-                    <p class="mt-2">Zelena salata</p>
-                </div>
-                <div class="carousel-item text-center">
-                    <img src="/assets/images/tomato_juice.jpg" class="d-block mx-auto" alt="Mleveni paradajz">
-                    <p class="mt-2">Mleveni paradajz</p>
-                </div>
+                {% for image in site.data.landing.images %}
+                    <div class="carousel-item {% if forloop.index == 1 %}active{% endif %} text-center">
+                        <img src="{{ site.baseurl }}{{ image.url }}" class="d-block mx-auto" alt="{{ image.alt }}">
+                        <p class="mt-2">{{ image.alt }}</p>
+                    </div>
+                {% endfor %}
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -36,7 +30,7 @@ title: Poljoprivredni proizvodi
                 <iframe class="w-100" height="300" src="https://www.google.com/maps/embed?" allowfullscreen></iframe>
             </div>
             <div class="col-md-6">
-                <p><strong>Adresa:</strong> Ulica Poljoprivrednika 12, Beograd, Srbija</p>
+                <p><strong>Adresa:</strong> {{ site.data.landing.address }}</p>
                 <p><strong>Telefon:</strong> +381 64 123 4567</p>
                 <p><strong>Email:</strong> info@poljoprivreda.rs</p>
                 <p><strong>Radno vreme:</strong></p>

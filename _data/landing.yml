@@ -1,0 +1,26 @@
+address: Ulica Poljoprivrednika 12, Beograd, Srbija
+images:
+  - url: "/assets/images/apples.jpg"
+    alt: "Jabuke"
+  - url:
+    alt:
+  - url:
+    alt:
+  - url:
+    alt:
+  - url:
+    alt:
+  - url:
+    alt:
+  - url:
+    alt:
+  - url:
+    alt:
+  - url:
+    alt:
+
+_scheme:
+  address: text
+  images:
+    - url: file
+      alt: text
