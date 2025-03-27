@@ -77,11 +77,11 @@ header h1 {
         width: 15%;
     }
 
-    #kontakt .row {
+    #contact .row {
         flex-direction: column;
     }
 
-    #kontakt iframe {
+    #contact iframe {
         height: 250px;
     }
 }
@@ -113,13 +113,13 @@ header h1 {
     color: #A9C46C !important;
 }
 
-#proizvodi {
+#products {
     background: linear-gradient(to bottom, #F4FFC3, #E0F0A0);
     padding: 60px 20px;
     border-radius: 10px;
 }
 
-#proizvodi h2 {
+#products h2 {
     font-size: 2rem;
     font-weight: bold;
     color: #5D8736;
@@ -128,7 +128,7 @@ header h1 {
     display: inline-block;
 }
 
-#proizvodi h2::after {
+#products h2::after {
     content: "";
     width: 50%;
     height: 4px;
@@ -149,13 +149,13 @@ header h1 {
     border-radius: 20%;
 }
 
-#kontakt {
+#contact {
     background: linear-gradient(to bottom, #E0F0A0, #C8DC80);
     padding: 60px 20px;
     border-radius: 10px;
 }
 
-#kontakt h2 {
+#contact h2 {
     font-size: 2rem;
     font-weight: bold;
     color: #5D8736;
@@ -164,7 +164,7 @@ header h1 {
     display: inline-block;
 }
 
-#kontakt h2::after {
+#contact h2::after {
     content: "";
     width: 50%;
     height: 4px;
@@ -174,28 +174,28 @@ header h1 {
     left: 25%;
 }
 
-#kontakt p {
+#contact p {
     font-size: 1.1rem;
     color: #333;
 }
 
-#kontakt ul {
+#contact ul {
     list-style: none;
 }
 
-#kontakt ul li {
+#contact ul li {
     font-size: 1.1rem;
     display: flex;
     align-items: center;
 }
 
-#kontakt ul li::before {
+#contact ul li::before {
     content: "📍";
     margin-right: 10px;
     font-size: 1.2rem;
 }
 
-#kontakt iframe {
+#contact iframe {
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -267,12 +267,12 @@ body {
     background-color: var(--btn-hover);
 }
 
-#proizvodi, #kontakt {
+#products, #contact {
     background: var(--card-bg);
     color: var(--text-color);
 }
 
-#kontakt p {
+#contact p {
     color: var(--text-color);
 }
 

@@ -4,7 +4,7 @@ title: Poljoprivredni proizvodi
 ---
 {% include navigation.html %}
 
-<section id="proizvodi" class="container my-5">
+<section id="products" class="container my-5">
         <h2 class="text-center mb-4">{{ site.data.i18n.our_products }}</h2>
         <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -23,7 +23,7 @@ title: Poljoprivredni proizvodi
             </button>
         </div>
 </section>
-<section id="kontakt" class="container my-5">
+<section id="contact" class="container my-5">
         <h2 class="text-center mb-4">Kontaktirajte nas</h2>
         <div class="row">
             <div class="col-md-6">
