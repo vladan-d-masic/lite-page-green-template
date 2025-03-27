@@ -16,10 +16,10 @@ title: Poljoprivredni proizvodi
                 {% endfor %}
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="carousel-control-prev-icon p-4" aria-hidden="true"></span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="carousel-control-next-icon p-4" aria-hidden="true"></span>
             </button>
         </div>
 </section>
@@ -34,10 +34,10 @@ title: Poljoprivredni proizvodi
                 <p><strong>Telefon:</strong> +381 64 123 4567</p>
                 <p><strong>Email:</strong> info@poljoprivreda.rs</p>
                 <p><strong>Radno vreme:</strong></p>
-                <ul>
-                    <li>Ponedeljak - Petak: 08:00 - 18:00</li>
-                    <li>Subota: 08:00 - 14:00</li>
-                    <li>Nedelja: Zatvoreno</li>
+                <ul class="p-0">
+                    <li class="py-1">Ponedeljak - Petak: 08:00 - 18:00</li>
+                    <li class="py-1">Subota: 08:00 - 14:00</li>
+                    <li class="py-1">Nedelja: Zatvoreno</li>
                 </ul>
             </div>
         </div>

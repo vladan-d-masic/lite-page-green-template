@@ -28,7 +28,6 @@ header {
 
 .header-overlay {
     background: rgba(0, 0, 0, 0.6);
-    padding: 20px;
     display: inline-block;
     border-radius: 10px;
 }
@@ -70,9 +69,6 @@ header h1 {
     width: 12%;
 }
 @media (max-width: 768px) {
-    header {
-        padding: 50px 10px;
-    }
     .carousel-item img {
         width: 100%;
         height: auto;
@@ -154,7 +150,6 @@ header h1 {
 .carousel-control-prev-icon, .carousel-control-next-icon {
     background-color: #5D8736;
     border-radius: 20%;
-    padding: 25px;
 }
 
 #kontakt {
@@ -190,12 +185,10 @@ header h1 {
 
 #kontakt ul {
     list-style: none;
-    padding: 0;
 }
 
 #kontakt ul li {
     font-size: 1.1rem;
-    padding: 5px 0;
     display: flex;
     align-items: center;
 }
@@ -220,7 +213,6 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     background: linear-gradient(to bottom, #F4FFC3, #E0F0A0);
