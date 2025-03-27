@@ -144,7 +144,6 @@ header h1 {
     font-size: 1.2rem;
     font-weight: bold;
     color: #5D8736;
-    margin-top: 10px;
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
@@ -180,7 +179,6 @@ header h1 {
 #kontakt p {
     font-size: 1.1rem;
     color: #333;
-    margin-bottom: 10px;
 }
 
 #kontakt ul {

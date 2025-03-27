@@ -20,7 +20,7 @@ permalink: /pricing.markdown/
                             <li>SEO</li>
                         </ul>
                         <p>Prvi mesec besplatno</p>
-                        <a href="#" class="btn btn-primary" style="margin: 0">Izaberi</a>
+                        <a href="#" class="btn btn-primary m-0">Izaberi</a>
                     </div>
                 </div>
             </div>
