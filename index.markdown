@@ -24,20 +24,20 @@ title: Poljoprivredni proizvodi
         </div>
 </section>
 <section id="contact" class="container my-5">
-        <h2 class="text-center mb-4">Kontaktirajte nas</h2>
+        <h2 class="text-center mb-4">{{ site.data.i18n.contact_us }}</h2>
         <div class="row">
             <div class="col-md-6">
                 <iframe class="w-100" height="300" src="https://www.google.com/maps/embed?" allowfullscreen></iframe>
             </div>
             <div class="col-md-6">
                 <p class="mb-2"><strong>Adresa:</strong> {{ site.data.landing.address }}</p>
-                <p class="mb-2"><strong>Telefon:</strong> +381 64 123 4567</p>
-                <p class="mb-2"><strong>Email:</strong> info@poljoprivreda.rs</p>
+                <p class="mb-2"><strong>Telefon:</strong> {{ site.data.landing.phone }}</p>
+                <p class="mb-2"><strong>Email:</strong> {{ site.data.landing.email }}</p>
                 <p class="mb-2"><strong>Radno vreme:</strong></p>
                 <ul class="p-0">
-                    <li class="py-1">Ponedeljak - Petak: 08:00 - 18:00</li>
-                    <li class="py-1">Subota: 08:00 - 14:00</li>
-                    <li class="py-1">Nedelja: Zatvoreno</li>
+                    <li class="py-1">Ponedeljak - Petak: {{ site.data.landing.working_hours_work_days }}</li>
+                    <li class="py-1">Subota: {{ site.data.landing.working_hours_saturday }}</li>
+                    <li class="py-1">Nedelja: {{ site.data.landing.working_hours_sunday }}</li>
                 </ul>
             </div>
         </div>

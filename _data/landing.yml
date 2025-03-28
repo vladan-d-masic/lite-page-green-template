@@ -6,6 +6,11 @@ images:
     alt: "Zelena salata"
   - url: "/assets/images/tomato_juice.jpg"
     alt: "Mleveni paradajz"
+phone: +381 64 123 4567
+email: info@poljoprivreda.rs
+working_hours_work_days: 08:00 - 18:00
+working_hours_saturday: 08:00 - 14:00
+working_hours_sunday: Zatvoreno
 
 _scheme:
   address: text
