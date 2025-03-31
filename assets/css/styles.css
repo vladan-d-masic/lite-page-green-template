@@ -20,7 +20,7 @@ body {
 }
 header {
     position: relative;
-    background: url('/assets/images/produce.jpg') center/cover no-repeat;
+    background: url('/lite-page-green-template/assets/images/produce.jpg') center/cover no-repeat;
     color: white;
     padding: 100px 0;
     margin-top: 56px;
@@ -283,5 +283,14 @@ body {
 #recommended {
     background-color: #809D3C;
 }
+
+/* .parallax-bg {
+    background: url('/lite-page-green-template/assets/images/green-leaves-paralax.png') repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: linear-gradient(to bottom, #F4FFC3, #E0F0A0);
+} */
 
 /* https://colorhunt.co/palette/5d8736809d3ca9c46cf4ffc3 */
