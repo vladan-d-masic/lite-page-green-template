@@ -45,7 +45,7 @@ title: Poljoprivredni proizvodi
             </button>
         </div>
 </section>
-<section id="products" class="splide container my-5" aria-label="Slide Container Example">
+<section id="products" class="splide container my-5" aria-label="Slide Container Example" style="animation: fadeIn 5s ease-out;">
     <h2 class="text-center mb-4">Naši proizvodi</h2>
     <div class="splide__track">
       <ul class="splide__list">

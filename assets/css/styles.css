@@ -10,7 +10,7 @@
 }
 
 header {
-    animation: fadeIn 1.5s ease-out;
+    animation: fadeIn 5s ease-out;
 }
 
 
@@ -117,6 +117,10 @@ header h1 {
     background: linear-gradient(to bottom, #F4FFC3, #E0F0A0);
     padding: 60px 20px;
     border-radius: 10px;
+}
+
+#products img:hover {
+    animation: fadeIn 1s ease-in-out;
 }
 
 #products h2 {
