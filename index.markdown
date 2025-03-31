@@ -25,32 +25,12 @@ title: Poljoprivredni proizvodi
     }
   </style>
 {% include navigation.html %}
-
-<section id="products" class="container my-5">
-        <h2 class="text-center mb-4">{{ site.data.i18n.our_products }}</h2>
-        <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                {% for image in site.data.landing.images %}
-                    <div class="carousel-item {% if forloop.index == 1 %}active{% endif %} text-center">
-                        <img src="{{ site.baseurl }}{{ image.url }}" class="d-block mx-auto" alt="{{ image.alt }}">
-                        <p class="mt-2 carousel-item-description">{{ image.alt }}</p>
-                    </div>
-                {% endfor %}
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon p-4" aria-hidden="true"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon p-4" aria-hidden="true"></span>
-            </button>
-        </div>
-</section>
 <section id="products" class="splide container my-5" aria-label="Slide Container Example" style="animation: fadeIn 5s ease-out;">
     <h2 class="text-center mb-4">Naši proizvodi</h2>
     <div class="splide__track">
       <ul class="splide__list">
       {% for image in site.data.landing.images %}
-        <li class="splide__slide text-center">
+        <li class="splide__slide text-center carousel-item">
             <img src="{{ site.baseurl }}{{ image.url }}" class="d-block mx-auto carousel-img" alt="{{ image.alt }}" data-hover="{{ site.baseurl }}{{ image.hover }}">
             <p class="mt-2 carousel-item-description">{{ image.alt }}</p>
         </li>

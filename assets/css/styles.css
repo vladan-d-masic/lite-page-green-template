@@ -15,7 +15,6 @@ header {
 
 
 body {
-    background-color: #F4FFC3;
     font-family: "Poppins", sans-serif;
 }
 header {
@@ -142,10 +141,29 @@ header h1 {
     left: 25%;
 }
 
+.carousel-item {
+    position: relative;
+    display: inline-block;
+}
+
 .carousel-item-description {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #5D8736;
+    color: white;
+    background-color: black;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+    opacity: 70%;
+    display: none;
+    position:absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.carousel-item img:hover + .carousel-item-description {
+    display: block;
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
@@ -283,14 +301,5 @@ body {
 #recommended {
     background-color: #809D3C;
 }
-
-/* .parallax-bg {
-    background: url('/lite-page-green-template/assets/images/green-leaves-paralax.png') repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background: linear-gradient(to bottom, #F4FFC3, #E0F0A0);
-} */
 
 /* https://colorhunt.co/palette/5d8736809d3ca9c46cf4ffc3 */
