@@ -69,9 +69,9 @@ title: Poljoprivredni proizvodi
                 <p class="mb-2"><strong>Email:</strong> {{ site.data.landing.email }}</p>
                 <p class="mb-2"><strong>Radno vreme:</strong></p>
                 <ul class="p-0">
-                    <li class="py-1">Ponedeljak - Petak: {{ site.data.landing.working_hours_work_days }}</li>
-                    <li class="py-1">Subota: {{ site.data.landing.working_hours_saturday }}</li>
-                    <li class="py-1">Nedelja: {{ site.data.landing.working_hours_sunday }}</li>
+                  {% for working_hour in site.data.landing.working_hours %}
+                    <li class="py-1">{{ working_hour }}</li>
+                  {% endfor %}
                 </ul>
             </div>
         </div>
