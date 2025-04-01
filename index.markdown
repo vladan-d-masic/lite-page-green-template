@@ -31,7 +31,7 @@ title: Poljoprivredni proizvodi
   }
 
   .show-section {
-    opacity: 1;
+    opacity: 0.9;
     transform: translateX(0);
   }
   </style>
