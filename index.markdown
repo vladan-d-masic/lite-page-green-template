@@ -28,6 +28,7 @@ title: Poljoprivredni proizvodi
     opacity: 0;
     transform: translateX(-100%);
     transition: opacity 1s ease-out, transform 1s ease-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   }
 
   .show-section {
