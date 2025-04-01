@@ -249,7 +249,8 @@ html {
 }
 
 :root {
-    --bg-color: linear-gradient(to bottom, #F4FFC3, #E0F0A0);
+    /* --bg-color: linear-gradient(to bottom, #F4FFC3, #E0F0A0); */
+    --bg-color: url('/lite-page-green-template/assets/images/leaves-paralax-light.png') repeat;
     --text-color: #333;
     --card-bg: linear-gradient(to bottom, #F4FFC3, #E0F0A0);
     --price-color: #5D8736;
@@ -258,7 +259,8 @@ html {
 }
 
 [data-bs-theme="dark"] {
-    --bg-color: linear-gradient(to bottom, #2E3B21, #1F2918);
+    /* --bg-color: linear-gradient(to bottom, #2E3B21, #1F2918); */
+    --bg-color: url('/lite-page-green-template/assets/images/leaves-paralax-dark.png') repeat;
     --text-color: #f8f9fa;
     --card-bg: #3B4A2E;
     --price-color: #A9C46C;
@@ -303,7 +305,7 @@ body {
 }
 
 .parallax-bg {
-    background: url('/lite-page-green-template/assets/images/leaves-paralax-light.png') repeat;
+    /* background: url('/lite-page-green-template/assets/images/leaves-paralax-light.png') repeat; */
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
