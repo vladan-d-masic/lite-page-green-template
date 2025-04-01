@@ -23,9 +23,20 @@ title: Poljoprivredni proizvodi
         height: auto;
       }
     }
+
+    .hidden-section {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+
+  .show-section {
+    opacity: 1;
+    transform: translateX(0);
+  }
   </style>
 {% include navigation.html %}
-<section id="products" class="splide container my-5" aria-label="Slide Container Example" style="animation: fadeIn 5s ease-out;">
+<section id="products" class="splide container my-5 hidden-section" aria-label="Slide Container Example">
     <h2 class="text-center mb-4">Naši proizvodi</h2>
     <div class="splide__track">
       <ul class="splide__list">
@@ -46,7 +57,7 @@ title: Poljoprivredni proizvodi
       </div>
     </div>
   </section>
-<section id="contact" class="container my-5">
+<section id="contact" class="container my-5 hidden-section">
         <h2 class="text-center mb-4">{{ site.data.i18n.contact_us }}</h2>
         <div class="row">
             <div class="col-md-6">
