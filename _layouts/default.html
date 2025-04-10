@@ -15,6 +15,18 @@
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 " rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+  <style>
+    {% if site.data.theme.body_background_image_light %}
+      :root {
+        --bg-image: url('{{ site.data.theme.body_background_image_light }}') repeat;
+      }
+    {% endif %}
+    {% if site.data.theme.body_background_image_dark %}
+      [data-bs-theme="dark"] {
+        --bg-image: url('{{ site.data.theme.body_background_image_dark }}') repeat;
+      }
+    {% endif %}
+  </style>
 </head>
 
 <body class="parallax-bg">

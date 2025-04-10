@@ -19,7 +19,6 @@ body {
 }
 header {
     position: relative;
-    background: url('/lite-page-green-template/assets/images/produce.jpg') center/cover no-repeat;
     color: white;
     padding: 100px 0;
     /* margin-top: 56px; */
@@ -251,8 +250,7 @@ html {
 }
 
 :root {
-    /* --bg-color: linear-gradient(to bottom, #F4FFC3, #E0F0A0); */
-    --bg-color: url('/lite-page-green-template/assets/images/parallax8.jpg') repeat;
+    --bg-image: linear-gradient(to bottom, #F4FFC3, #E0F0A0);
     --text-color: #333;
     --card-bg: linear-gradient(to bottom, #F4FFC3, #E0F0A0);
     --price-color: #5D8736;
@@ -261,8 +259,7 @@ html {
 }
 
 [data-bs-theme="dark"] {
-    /* --bg-color: linear-gradient(to bottom, #2E3B21, #1F2918); */
-    --bg-color: url('/lite-page-green-template/assets/images/leaves-paralax-dark.png') repeat;
+    --bg-image: linear-gradient(to bottom, #2E3B21, #1F2918);
     --text-color: #f8f9fa;
     --card-bg: #3B4A2E;
     --price-color: #A9C46C;
@@ -271,7 +268,7 @@ html {
 }
 
 body {
-    background: var(--bg-color);
+    background: var(--bg-image);
     color: var(--text-color);
 }
 
