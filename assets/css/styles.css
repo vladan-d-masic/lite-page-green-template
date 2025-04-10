@@ -22,13 +22,14 @@ header {
     background: url('/lite-page-green-template/assets/images/produce.jpg') center/cover no-repeat;
     color: white;
     padding: 100px 0;
-    margin-top: 56px;
+    /* margin-top: 56px; */
+    border-radius: 0 0 20px 20px;
 }
 
 .header-overlay {
     background: rgba(0, 0, 0, 0.6);
     display: inline-block;
-    border-radius: 10px;
+    border-radius: 0 0 20px 20px;
 }
 
 header::before {
@@ -39,6 +40,7 @@ header::before {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 20px 20px;
 }
 header h1 {
     position: relative;
@@ -250,7 +252,7 @@ html {
 
 :root {
     /* --bg-color: linear-gradient(to bottom, #F4FFC3, #E0F0A0); */
-    --bg-color: url('/lite-page-green-template/assets/images/leaves-paralax-light.png') repeat;
+    --bg-color: url('/lite-page-green-template/assets/images/parallax8.jpg') repeat;
     --text-color: #333;
     --card-bg: linear-gradient(to bottom, #F4FFC3, #E0F0A0);
     --price-color: #5D8736;
@@ -310,6 +312,17 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: -1;
 }
 
 
