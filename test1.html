@@ -125,20 +125,20 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-    const section = document.querySelector(".hidden-section");
+      const section = document.querySelector(".hidden-section");
 
-    function handleScroll() {
+      function handleScroll() {
         const sectionPosition = section.getBoundingClientRect().top;
         const screenHeight = window.innerHeight;
 
         if (sectionPosition < screenHeight * 0.75) {
-            section.classList.add("show-section");
+          section.classList.add("show-section");
         }
-    }
+      }
 
-    window.addEventListener("scroll", handleScroll);
-    handleScroll();
-});
+      window.addEventListener("scroll", handleScroll);
+      handleScroll();
+    });
 
   </script>
 </body>
