@@ -4,20 +4,6 @@ title: Poljoprivredni proizvodi
 ---
 
 <style>
-  img {
-    width: 600px;
-    max-width: 100%;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-  }
-
-  img:hover {
-    transform: scale(1.05);
-  }
-
   @media (max-width: 768px) {
     .carousel-item img {
       width: 100%;
@@ -48,7 +34,6 @@ title: Poljoprivredni proizvodi
           src="{{ site.baseurl }}{{ image.url }}"
           class="d-block mx-auto carousel-img"
           alt="{{ image.alt }}"
-          data-hover="{{ site.baseurl }}{{ image.hover }}"
         />
         <p class="mt-2 carousel-item-description">{{ image.alt }}</p>
       </li>
@@ -107,7 +92,7 @@ title: Poljoprivredni proizvodi
   });
   splide.mount();
 </script>
-<script>
+<!-- <script>
   document.querySelectorAll(".carousel-img").forEach((img) => {
     const originalSrc = img.src;
     const hoverSrc = img.getAttribute("data-hover");
@@ -118,7 +103,7 @@ title: Poljoprivredni proizvodi
       img.src = originalSrc;
     });
   });
-</script>
+</script> -->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const sections = document.querySelectorAll(".hidden-section");
