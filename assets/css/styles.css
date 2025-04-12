@@ -147,6 +147,7 @@ header h1 {
 .carousel-item {
   position: relative;
   display: inline-block;
+  overflow: hidden;
 }
 
 .carousel-item-description {
