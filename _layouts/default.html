@@ -27,12 +27,12 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     <style>
       {% if site.data.theme.body_background_image_light %}
         :root {
-          --bg-image: url('{{ site.data.theme.body_background_image_light }}') repeat;
+          --bg-image: url('{{ site.baseurl }}{{ site.data.theme.body_background_image_light }}') repeat;
         }
       {% endif %}
       {% if site.data.theme.body_background_image_dark %}
         [data-bs-theme="dark"] {
-          --bg-image: url('{{ site.data.theme.body_background_image_dark }}') repeat;
+          --bg-image: url('{{ site.baseurl }}{{ site.data.theme.body_background_image_dark }}') repeat;
         }
       {% endif %}
     </style>
@@ -43,7 +43,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       class="navbar navbar-dark"
       style="
     border-radius: 0 0 40px 40px;
-    background: url('{{ site.baseurl }} {{ site.data.theme.header_background_image }}') center/cover no-repeat;
+    background: url('{{ site.baseurl }}{{ site.data.theme.header_background_image }}') center/cover no-repeat;
     "
     >
       <div class="container-fluid">
