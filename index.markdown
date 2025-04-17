@@ -25,7 +25,7 @@ title: Poljoprivredni proizvodi
 </style>
 
 <section id="products" class="splide container my-5 hidden-section" aria-label="Slide Container Example">
-  <h2 class="text-center mb-4">Naši proizvodi</h2>
+  <h2 class="text-center mb-4">{{ site.data.i18n.sr.our_products }}</h2>
   <div class="splide__track">
     <ul class="splide__list">
       {% for image in site.data.landing.images %}
@@ -50,7 +50,7 @@ title: Poljoprivredni proizvodi
   </div>
 </section>
 <section id="contact" class="container my-5 hidden-section">
-  <h2 class="text-center mb-4">{{ site.data.i18n.contact_us }}</h2>
+  <h2 class="text-center mb-4">{{ site.data.i18n.sr.contact_us }}</h2>
   <div class="row">
     <div class="col-md-6">
       <iframe
