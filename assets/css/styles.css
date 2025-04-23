@@ -52,7 +52,6 @@ header h1 {
   border-radius: 15px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out;
-  /* display: block; */
 }
 .carousel-item img:hover {
   transform: scale(1.05);
