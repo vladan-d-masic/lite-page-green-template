@@ -349,4 +349,9 @@ body::before {
   visibility: visible;
 }
 
+.phone-button {
+  color: #f4ffc3;
+  border-color: #f4ffc3;
+}
+
 /* https://colorhunt.co/palette/5d8736809d3ca9c46cf4ffc3 */
