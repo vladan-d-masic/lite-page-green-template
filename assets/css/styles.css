@@ -337,4 +337,16 @@ body::before {
   opacity: 0;
 }
 
+#backToTop {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  z-index: 999;
+}
+
+#backToTop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
 /* https://colorhunt.co/palette/5d8736809d3ca9c46cf4ffc3 */

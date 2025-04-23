@@ -139,5 +139,16 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
       });
     </script>
+    <script>
+      const backToTopBtn = document.getElementById("backToTop");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 100) {
+          backToTopBtn.classList.add("show");
+        } else {
+          backToTopBtn.classList.remove("show");
+        }
+      });
+    </script>
   </body>
 </html>
