@@ -102,7 +102,7 @@ header h1 {
   text-decoration: none;
 }
 #backToTop:hover {
-  background-color: #809d3c;
+  background-color: #809d3c !important;
 }
 .navbar {
   width: 100%;
@@ -120,10 +120,6 @@ header h1 {
   padding: 60px 20px;
   border-radius: 10px;
 }
-
-/* #products img:hover {
-  animation: fadeIn 1s ease-in-out;
-} */
 
 #products h2 {
   font-size: 2rem;
@@ -255,9 +251,9 @@ html {
 }
 
 :root {
-  --bg-image: linear-gradient(to bottom, #f4ffc3, #e0f0a0);
+  --bg-image: linear-gradient(to bottom, #f4ffc3, #a9c46c);
   --text-color: #333;
-  --card-bg: linear-gradient(to bottom, #f4ffc3, #e0f0a0);
+  --card-bg: linear-gradient(to bottom, #f4ffc3, #a9c46c);
   --price-color: #5d8736;
   --btn-bg: #809d3c;
   --btn-hover: #a9c46c;
@@ -310,7 +306,6 @@ body {
 }
 
 .parallax-bg {
-  /* background: url('/lite-page-green-template/assets/images/leaves-paralax-light.png') repeat; */
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
