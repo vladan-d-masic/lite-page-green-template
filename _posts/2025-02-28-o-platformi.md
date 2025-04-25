@@ -1,6 +1,6 @@
 ---
 layout: post
-author: vladan
+author: Dule
 title: "O platformi"
 ---
 

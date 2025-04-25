@@ -349,4 +349,18 @@ body::before {
   border-color: #f4ffc3;
 }
 
+.post-title {
+  color: #5d8736;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+.post-title:hover {
+  text-decoration: underline;
+}
+
 /* https://colorhunt.co/palette/5d8736809d3ca9c46cf4ffc3 */
