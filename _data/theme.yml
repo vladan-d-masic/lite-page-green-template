@@ -1,3 +1,4 @@
 header_background_image: /assets/images/default-produce.webp
-#body_background_image_light: /assets/images/default-leaves-parallax-light.webp
-#body_background_image_dark: /assets/images/default-leaves-parallax-dark.webp
+body_background_image_light:
+body_background_image_light_default: /assets/images/theme/leaves-parallax-light.webp
+body_background_image_dark_default: /assets/images/theme/leaves-parallax-dark.webp
