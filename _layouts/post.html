@@ -14,11 +14,61 @@ layout: default
     transform: translateX(0);
   }
 </style>
-<section class="container my-5 hidden-section">
-  <h1>{{ page.title }}</h1>
-  <p>{{ page.date | date: "%d.%m.%Y" }}, {{ page.author }}</p>
-  {{ content }}
-</section>
+
+<style>
+  .single-post {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f4ffc3; /* from your palette */
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  }
+
+  .single-post .post-title {
+    font-size: 2.5rem;
+    color: #5d8736; /* your dark green */
+    margin-bottom: 0.5rem;
+  }
+
+  .single-post .post-meta {
+    color: #809d3c; /* your medium green */
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+
+  .single-post .post-content {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #2e3b21;
+  }
+
+  .single-post .post-content h2,
+  .single-post .post-content h3 {
+    color: #5d8736;
+    margin-top: 1.5rem;
+  }
+
+  .single-post .post-content a {
+    color: #809d3c;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+
+  .single-post .post-content a:hover {
+    color: #a9c46c;
+  }
+</style>
+
+<article class="single-post my-5">
+  <section class="container my-5 hidden-section post-content">
+    <h1 class="post-title text-decoration-none">{{ page.title }}</h1>
+    <p class="post-meta">
+      {{ page.date | date: "%d.%m.%Y" }}, {{ page.author }}
+    </p>
+    {{ content }}
+  </section>
+</article>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const sections = document.querySelectorAll(".hidden-section");
