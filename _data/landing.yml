@@ -1,9 +1,9 @@
 images:
-  - url: "/assets/images/default-apples.webp"
+  - url: "/assets/images/theme/default-apples.webp"
     alt: "Jabuke"
-  - url: "/assets/images/default-lettuce.webp"
+  - url: "/assets/images/theme/default-lettuce.webp"
     alt: "Zelena salata"
-  - url: "/assets/images/default-tomato_juice.webp"
+  - url: "/assets/images/theme/default-tomato_juice.webp"
     alt: "Mleveni paradajz"
 address: Ulica Poljoprivrednika 12, Beograd, Srbija
 phone: +381 64 123 4567
