@@ -24,11 +24,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       rel="stylesheet"
       href="{{ 'assets/css/styles.css' | relative_url }}"
     />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="{{ site.data.theme.favicon | relative_url }}"
-    />
+    <link rel="icon" href="{{ site.data.theme.favicon | relative_url }}" />
     <style>
       {% if site.data.theme.body_background_image_light %}
         :root {
@@ -147,10 +143,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           window.pageYOffset || document.documentElement.scrollTop;
 
         if (currentScroll > lastScrollTop) {
-          // Scrolling down – hide navbar
           navbar.classList.add("hide-navbar");
         } else {
-          // Scrolling up – show navbar
           navbar.classList.remove("hide-navbar");
         }
 
