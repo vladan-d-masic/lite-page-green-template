@@ -364,3 +364,14 @@ body::before {
 }
 
 /* https://colorhunt.co/palette/5d8736809d3ca9c46cf4ffc3 */
+
+.pagination .page-link {
+  color: #5d8736;
+  border-color: #5d8736;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #5d8736;
+  border-color: #5d8736;
+  color: #fff;
+}

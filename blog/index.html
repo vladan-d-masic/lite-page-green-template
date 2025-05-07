@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Blog
+paginate: true
 ---
 
 <style>
@@ -38,15 +39,16 @@ title: Blog
     transform: translateX(0);
   }
 </style>
+
 <section class="container my-5 single-post">
   <h1 class="my-5">Poslednji postovi</h1>
 
   <ul class="list-unstyled">
-    {% for post in site.posts %}
+    {% assign index_mod = 0 %}
+    {% for post in paginator.posts %}
     {% assign index_mod = forloop.index0 | modulo: 2 %}
-    {% if index_mod == 0 %}
     {% assign animation_class = 'slide-in-left' %}
-    {% else %}
+    {% if index_mod == 1 %}
     {% assign animation_class = 'slide-in-right' %}
     {% endif %}
     <li class="hidden-section {{ animation_class }}">
@@ -61,8 +63,49 @@ title: Blog
     {% endfor %}
   </ul>
 
+  <p class="text-muted text-center my-4">
+    Postovi
+    <strong>
+      {{ paginator.page | minus: 1 | times: paginator.per_page | plus: 1 }}
+      –
+      {{ paginator.page | times: paginator.per_page | at_most: paginator.total_posts }}
+    </strong>
+    od ukupno <strong>{{ paginator.total_posts }}</strong>
+  </p>
+
+  <p class="text-center text-muted mb-2">
+    Strana {{ paginator.page }} od {{ paginator.total_pages }}
+  </p>
+
+
+  <nav aria-label="Pagination">
+    <ul class="pagination justify-content-center mt-4">
+      {% if paginator.previous_page %}
+      <li class="page-item">
+        <a class="page-link" href="{{ paginator.previous_page_path }}" aria-label="Previous">
+          &laquo; Prethodna
+        </a>
+      </li>
+      {% endif %}
+
+      {% for page in (1..paginator.total_pages) %}
+      <li class="page-item {% if page == paginator.page %}active{% endif %}">
+        <a class="page-link" href="/blog/{% if page > 1 %}page{{ page }}/{% endif %}">{{ page }}</a>
+      </li>
+      {% endfor %}
+
+      {% if paginator.next_page %}
+      <li class="page-item">
+        <a class="page-link" href="{{ paginator.next_page_path }}" aria-label="Next">
+          Sledeća &raquo;
+        </a>
+      </li>
+      {% endif %}
+    </ul>
+  </nav>
 
 </section>
+
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const sections = document.querySelectorAll(
