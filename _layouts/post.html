@@ -64,7 +64,13 @@ layout: default
   <section class="container my-5 hidden-section post-content">
     <h1 class="post-title text-decoration-none">{{ page.title }}</h1>
     <p class="post-meta">
-      {{ page.date | date: "%d.%m.%Y" }}, {{ page.author }}
+      {{ page.date | date: "%d.%m.%Y" }},
+      <a
+        href="/blog/author/{{ page.author | downcase }}/"
+        class="text-decoration-underline"
+      >
+        {{ page.author }}
+      </a>
     </p>
     {{ content }}
   </section>
