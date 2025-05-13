@@ -59,13 +59,13 @@ paginate: true
       <h2>
         <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
         <span class="fs-5 fw-normal post-meta">
-          - {{ post.date | date: "%d.%m.%Y" }},
+          - {{ post.date | date: "%d.%m.%Y" }}, {% for author in post.authors %}
           <a
-            href="/blog/author/{{ post.author | downcase }}/"
+            href="/blog/author/{{ author | downcase }}/"
             class="text-decoration-underline"
           >
-            {{ post.author }}
-          </a>
+            {{ author }} </a
+          >{% unless forloop.last %}, {% endunless %} {% endfor %}
         </span>
       </h2>
       {{ post.excerpt }}

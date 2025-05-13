@@ -1,6 +1,6 @@
 ---
 layout: post
-author: Vladan
+authors: ["Vladan"]
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet sapien ut risus aliquam condimentum sit amet in dolor. Cras eu ornare enim, non aliquet elit. Cras dictum lorem neque, eu aliquam metus dapibus eu. Integer ac tristique massa, non imperdiet libero. Mauris nec euismod ante. Donec et urna dignissim, efficitur magna a, bibendum velit. Mauris urna magna, tincidunt ut convallis ut, imperdiet vitae arcu. Nunc massa augue, blandit finibus sem a, dictum venenatis turpis. Fusce bibendum vel erat at egestas. Mauris ac venenatis urna. Nullam varius, purus ac convallis fringilla, diam est sollicitudin nunc, quis consequat orci neque et turpis.

@@ -1,6 +1,6 @@
 ---
 layout: post
-author: Vladan
+authors: ["Vladan"]
 title: "Novo na platformi"
 ---
 

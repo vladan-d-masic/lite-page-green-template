@@ -1,6 +1,6 @@
 ---
 layout: post
-author: Dule
+authors: ["Dule"]
 ---
 
 Nulla eu odio dui. Nam tincidunt arcu quis erat sollicitudin rutrum. Duis finibus sapien sem, non feugiat ligula hendrerit et. Sed in nulla augue. Aliquam dictum mi ut gravida pulvinar. Vivamus vitae interdum elit, eget bibendum augue. Donec vitae metus porttitor, gravida velit vel, maximus dolor. Maecenas nulla sem, fermentum id congue at, semper ac leo. Vestibulum ac tempus urna, eget blandit orci. Vestibulum felis metus, venenatis quis sagittis eu, venenatis et velit.

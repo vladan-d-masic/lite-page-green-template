@@ -47,14 +47,17 @@ permalink: /blog/author/vladan/
     margin-bottom: 1rem;
   }
 </style>
+
+{% assign author_posts = site.posts | where_exp: "post", "post.authors contains
+'Vladan'" %}
+
 <section class="container my-5 single-post">
   <h1 class="my-5">Postovi autora Vladan</h1>
 
   <ul class="list-unstyled">
-    {% assign vladans_posts = site.posts | where: "author", "Vladan" %} {% for
-    post in vladans_posts %} {% assign index_mod = forloop.index0 | modulo: 2 %}
-    {% assign animation_class = 'slide-in-left' %} {% if index_mod == 1 %} {%
-    assign animation_class = 'slide-in-right' %} {% endif %}
+    {% for post in author_posts %} {% assign index_mod = forloop.index0 |
+    modulo: 2 %} {% assign animation_class = 'slide-in-left' %} {% if index_mod
+    == 1 %} {% assign animation_class = 'slide-in-right' %} {% endif %}
 
     <li class="hidden-section {{ animation_class }}">
       <h2>

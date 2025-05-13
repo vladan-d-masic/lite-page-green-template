@@ -1,6 +1,6 @@
 ---
 layout: post
-author: Dule
+authors: ["Dule"]
 title: "O platformi"
 ---
 
