@@ -110,9 +110,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             <li class="nav-item">
               <a class="nav-link" href="/#contact">Kontakt</a>
             </li>
+            {% if site.posts.size > 0 %}
             <li class="nav-item">
               <a class="nav-link" href="/blog">Blog</a>
             </li>
+            {% endif %}
             <li class="nav-item">
               <a
                 class="btn btn-outline-light ms-2 phone-button"
