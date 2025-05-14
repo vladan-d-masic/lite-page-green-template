@@ -99,9 +99,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         </button>
         <div class="collapse navbar-collapse mx-3" id="navbarNav">
           <ul class="navbar-nav mt-3 mt-md-0">
+            {% if site.ui.show_darkmode_toggle %}
             <li class="nav-item">
               <button id="darkModeToggle" class="btn btn-secondary">🌙</button>
             </li>
+            {% endif %}
             <li class="nav-item">
               <a class="nav-link" href="/#products">Naši Proizvodi</a>
             </li>
