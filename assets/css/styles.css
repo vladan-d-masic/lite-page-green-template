@@ -20,7 +20,6 @@ header {
   position: relative;
   color: white;
   padding: 100px 0;
-  /* margin-top: 56px; */
   border-radius: 0 0 20px 20px;
 }
 
@@ -58,11 +57,11 @@ header h1 {
 }
 
 .btn-primary {
-  background-color: #809d3c;
+  background-color: var(--secondary-color);
   border: none;
 }
 .btn-primary:hover {
-  background-color: #a9c46c;
+  background-color: var(--accent-color);
 }
 .carousel-control-prev,
 .carousel-control-next {
@@ -88,7 +87,7 @@ header h1 {
 }
 #backToTop,
 .navbar {
-  background-color: #5d8736 !important;
+  background-color: var(--primary-color) !important;
 }
 #backToTop {
   width: 50px;
@@ -102,21 +101,21 @@ header h1 {
   text-decoration: none;
 }
 #backToTop:hover {
-  background-color: #809d3c !important;
+  background-color: var(--secondary-color) !important;
 }
 .navbar {
   width: 100%;
   z-index: 1000;
 }
 .nav-link {
-  color: #f4ffc3 !important;
+  color: var(--background-color) !important;
 }
 .nav-link:hover {
-  color: #a9c46c !important;
+  color: var(--accent-color) !important;
 }
 
 #products {
-  background: linear-gradient(to bottom, #f4ffc3, #e0f0a0);
+  background: linear-gradient(to bottom, var(--background-color), #e0f0a0);
   padding: 60px 20px;
   border-radius: 10px;
 }
@@ -124,7 +123,7 @@ header h1 {
 #products h2 {
   font-size: 2rem;
   font-weight: bold;
-  color: #5d8736;
+  color: var(--primary-color);
   text-transform: uppercase;
   position: relative;
   display: inline-block;
@@ -134,7 +133,7 @@ header h1 {
   content: "";
   width: 50%;
   height: 4px;
-  background: #809d3c;
+  background: var(--secondary-color);
   position: absolute;
   bottom: -5px;
   left: 25%;
@@ -169,7 +168,7 @@ header h1 {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: #5d8736;
+  background-color: var(--primary-color);
   border-radius: 20%;
 }
 
@@ -182,7 +181,7 @@ header h1 {
 #contact h2 {
   font-size: 2rem;
   font-weight: bold;
-  color: #5d8736;
+  color: var(--primary-color);
   text-transform: uppercase;
   position: relative;
   display: inline-block;
@@ -192,7 +191,7 @@ header h1 {
   content: "";
   width: 50%;
   height: 4px;
-  background: #809d3c;
+  background: var(--secondary-color);
   position: absolute;
   bottom: -5px;
   left: 25%;
@@ -235,37 +234,45 @@ html {
   justify-content: space-between;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  background: linear-gradient(to bottom, #f4ffc3, #e0f0a0);
+  background: linear-gradient(to bottom, var(--background-color), #e0f0a0);
 }
 .price {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #5d8736;
+  color: var(--primary-color);
 }
 .btn-primary {
-  background-color: #809d3c;
+  background-color: var(--secondary-color);
   border: none;
 }
 .btn-primary:hover {
-  background-color: #a9c46c;
+  background-color: var(--accent-color);
 }
 
 :root {
-  --bg-image: linear-gradient(to bottom, #f4ffc3, #a9c46c);
+  --bg-image: linear-gradient(
+    to bottom,
+    var(--background-color),
+    var(--accent-color)
+  );
   --text-color: #333;
-  --card-bg: linear-gradient(to bottom, #f4ffc3, #a9c46c);
-  --price-color: #5d8736;
-  --btn-bg: #809d3c;
-  --btn-hover: #a9c46c;
+  --card-bg: linear-gradient(
+    to bottom,
+    var(--background-color),
+    var(--accent-color)
+  );
+  --price-color: var(--primary-color);
+  --btn-bg: var(--secondary-color);
+  --btn-hover: var(--accent-color);
 }
 
 [data-bs-theme="dark"] {
   --bg-image: linear-gradient(to bottom, #2e3b21, #1f2918);
   --text-color: #f8f9fa;
   --card-bg: #3b4a2e;
-  --price-color: #a9c46c;
-  --btn-bg: #a9c46c;
-  --btn-hover: #809d3c;
+  --price-color: var(--accent-color);
+  --btn-bg: var(--accent-color);
+  --btn-hover: var(--secondary-color);
 }
 
 body {
@@ -302,7 +309,7 @@ body {
 }
 
 #recommended {
-  background-color: #809d3c;
+  background-color: var(--secondary-color);
 }
 
 .parallax-bg {
@@ -345,12 +352,12 @@ body::before {
 }
 
 .phone-button {
-  color: #f4ffc3;
-  border-color: #f4ffc3;
+  color: var(--background-color);
+  border-color: var(--background-color);
 }
 
 .post-title {
-  color: #5d8736;
+  color: var(--primary-color);
   text-decoration: none;
   font-size: 1.8rem;
   font-weight: 600;
@@ -363,15 +370,37 @@ body::before {
   text-decoration: underline;
 }
 
-/* https://colorhunt.co/palette/5d8736809d3ca9c46cf4ffc3 */
-
 .pagination .page-link {
-  color: #5d8736;
-  border-color: #5d8736;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 .pagination .page-item.active .page-link {
-  background-color: #5d8736;
-  border-color: #5d8736;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
   color: #fff;
+}
+
+/* https://colorhunt.co/palette/5d8736809d3ca9c46cf4ffc3 */
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.navbar {
+  background-color: var(--primary-color);
+}
+
+.navbar a {
+  color: var(--accent-color);
+}
+
+.post-meta {
+  color: var(--secondary-color);
+}
+
+.single-post {
+  background-color: var(--background-color);
+  border: 1px solid var(--primary-color);
 }
