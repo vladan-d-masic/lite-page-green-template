@@ -381,7 +381,37 @@ body::before {
   color: #fff;
 }
 
-/* https://colorhunt.co/palette/5d8736809d3ca9c46cf4ffc3 */
+/* green palette - https://colorhunt.co/palette/5d8736809d3ca9c46cf4ffc3 
+   cherry-blossom palette - https://coolors.co/fc4f4f-fc7477-ffb6b9-fff2f2
+   blue - https://colorhunt.co/palette/5409da4e71ff8dd8ffbbfbff
+   blue-green -https://colorhunt.co/palette/2057814f959d98d2c0f6f8d5
+   purple - https://colorhunt.co/palette/aa60c8d69adeeabde6ffdfef
+   navy-teal-beige - https://colorhunt.co/palette/27445d497d7471bbb2efe9d5
+   black-maroon - https://colorhunt.co/palette/09122c872341be3144e17564
+   orange - https://colorhunt.co/palette/eb5a3cdf9755e7d283edf4c2
+   grey-sage - https://colorhunt.co/palette/727d73aab99ad0ddd0f0f0d7
+   dark-purple - https://colorhunt.co/palette/4417528174a0a888b5efb6c8
+   dark-green - https://colorhunt.co/palette/1235243e7b2785a947efe3c2
+   sage - https://colorhunt.co/palette/4b594566785f91ac8fb2c9ad
+   brownish-yellow - https://colorhunt.co/palette/a86523e9a319fad59afcefcb
+   grey-beige - https://colorhunt.co/palette/a59d84c1baa1d7d3bfecebde
+   black-grey-beige - https://colorhunt.co/palette/222831393e46948979dfd0b8
+   sage-yellow - https://colorhunt.co/palette/b2b377d2d180e5e483f1f5a8
+   golden-brown - https://colorhunt.co/palette/a86523e9a319fad59afcefcb
+   blue-greyish-beige - https://colorhunt.co/palette/405d72758694f7e7dcfff8f3
+   black-maroonish-yellow - https://colorhunt.co/palette/343131a04747d8a25eeedf7a
+   maroon-orange - https://colorhunt.co/palette/7c444f9f5255e16a54f39e60
+   bluish-grey-beige - https://colorhunt.co/palette/4c585b7e99a3a5bfccf4edd3
+   sage-brownish-grey - https://colorhunt.co/palette/706d54a08963c9b194dbdbdb
+   purple-pinkish - https://colorhunt.co/palette/4338787e60bfe4b1f0ffe1ff
+   black-greyish-beige - https://colorhunt.co/palette/181c143c3d37697565ecdfcc
+   blue-gray-pastel - https://colorhunt.co/palette/89a8b2b3c8cfe5e1daf1f0e8
+   black-maroon-purple - https://colorhunt.co/palette/1a1a1d3b1c326a1e55a64d79
+   greyish-sage-beige - https://colorhunt.co/palette/727d73aab99ad0ddd0f0f0d7
+   sage-peach-beige - https://colorhunt.co/palette/ccd5aee0e5b6faedcefefae0
+   purple-pinkish-yellow - https://colorhunt.co/palette/cb9df0f0c1e1fddbbbfff9bf
+   bluish-teal-grey - https://colorhunt.co/palette/2e50774da1a979d7bef6f4f0
+*/
 
 body {
   background-color: var(--background-color);

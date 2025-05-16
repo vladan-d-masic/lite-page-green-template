@@ -1,17 +1,12 @@
+{% assign theme = site.ui.color_theme %} {% assign palette =
+site.ui.palettes[theme] %}
+
 <style>
   :root {
-    {% if site.ui.color_theme == "cherry-blossom" %}
-      --primary-color: #FC4F4F;      /* Cherry Red */
-      --secondary-color: #FC7477;    /* Lighter Red */
-      --accent-color: #FFB6B9;       /* Soft Pink */
-      --background-color: #FFF2F2;   /* Blush Background */
-      --text-color: #333333;         /* Dark Text */
-    {% else %}
-      --primary-color: #5D8736;      /* Green Primary */
-      --secondary-color: #809D3C;    /* Olive Secondary */
-      --accent-color: #A9C46C;       /* Light Green Accent */
-      --background-color: #F4FFC3;   /* Pale Green Background */
-      --text-color: #333333;         /* Dark Text */
-    {% endif %}
+    --primary-color: {{ palette.primary }};
+    --secondary-color: {{ palette.secondary }};
+    --accent-color: {{ palette.accent }};
+    --background-color: {{ palette.background }};
+    --text-color: {{ palette.text }};
   }
 </style>
