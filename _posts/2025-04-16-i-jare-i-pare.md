@@ -1,6 +1,7 @@
 ---
 layout: post
 authors: ["Vladan"]
+lang: sr
 ---
 
 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst. Mauris fringilla tempus purus eget cursus. Donec nec finibus risus. Sed sodales massa eget viverra lacinia. Duis sem neque, dignissim a purus vel, rhoncus malesuada mauris. Nunc consectetur ligula id augue bibendum malesuada. Integer suscipit placerat sollicitudin. Suspendisse in sollicitudin erat. Nulla sed dolor felis.

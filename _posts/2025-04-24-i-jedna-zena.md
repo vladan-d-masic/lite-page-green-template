@@ -1,6 +1,7 @@
 ---
 layout: post
 authors: ["Dule"]
+lang: sr
 ---
 
 Curabitur ac velit maximus, tempor metus in, ullamcorper massa. Donec consequat a mi vitae porttitor. Donec volutpat tristique imperdiet. Duis vel vehicula nulla, et euismod lectus. Sed gravida ullamcorper lacus sed interdum. Nullam elit ligula, finibus quis dui eget, rutrum elementum turpis. Curabitur vitae erat lorem. Quisque ut congue massa. Phasellus maximus libero sit amet pellentesque molestie. Aliquam vel gravida nunc. Phasellus quis lorem accumsan, faucibus ante vel, lacinia felis. Quisque posuere, felis vel viverra dictum, ex eros lobortis libero, sit amet efficitur neque leo a urna. Nunc vestibulum lectus nibh, non laoreet magna mattis eu.

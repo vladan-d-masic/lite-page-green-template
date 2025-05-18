@@ -1,6 +1,7 @@
 ---
 layout: post
 authors: ["Dule"]
+lang: sr
 ---
 
 In pulvinar augue non mi molestie congue. Cras at placerat metus. Nulla gravida augue felis, in venenatis eros posuere id. Ut auctor venenatis tellus, sed imperdiet arcu fermentum vel. Vestibulum iaculis semper eleifend. Integer tellus diam, interdum eget nunc non, pulvinar posuere justo. Nulla facilisi. Aenean accumsan vel urna suscipit pharetra.

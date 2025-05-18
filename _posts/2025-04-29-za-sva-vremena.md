@@ -1,6 +1,7 @@
 ---
 layout: post
 authors: ["Dule"]
+lang: sr
 ---
 
 Fusce venenatis nisi non risus sollicitudin sodales. Donec dapibus libero at erat gravida elementum. Aenean maximus lacinia ornare. Duis ultricies vulputate massa, ut interdum metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis a ultrices arcu. Suspendisse vehicula, arcu et suscipit pharetra, lectus tortor porttitor quam, vitae dignissim turpis ligula non augue. Maecenas at pharetra lorem, et malesuada metus.

@@ -1,6 +1,7 @@
 ---
 layout: post
 authors: ["Dule"]
+lang: sr
 ---
 
 Etiam sit amet tempus tellus, et sagittis mauris. Curabitur pulvinar lectus ut justo aliquet, at semper nibh aliquet. Quisque sagittis leo eu hendrerit congue. Sed finibus porttitor consequat. Curabitur varius varius rutrum. Aliquam dictum posuere felis, vitae placerat metus rhoncus eu. Nam elementum eget ante quis hendrerit.

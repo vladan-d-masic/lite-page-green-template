@@ -1,3 +1,7 @@
+---
+lang: sr
+---
+
 <!DOCTYPE html>
 <html lang="sr">
   <head>
@@ -79,9 +83,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       style="background: url('{{ site.data.theme.header_background_image | relative_url }}') center/cover no-repeat;"
     >
       <div class="header-overlay p-4">
-        <h1 class="mb-3">{{ site.data.i18n.sr.welcome_to_our_store }}</h1>
+        <h1 class="mb-3">
+          {{ site.data[page.lang].strings.welcome_to_our_store }}
+        </h1>
         <p class="lead" style="position: relative; z-index: 1">
-          {{ site.data.i18n.sr.fresh_produce }}
+          {{ site.data[page.lang].strings.fresh_produce }}
         </p>
       </div>
     </header>
@@ -107,28 +113,35 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             </li>
             {% endif %}
             <li class="nav-item">
-              <a class="nav-link" href="/#products">Naši Proizvodi</a>
+              <a class="nav-link" href="/#products"
+                >{{ site.data[page.lang].strings.our_products }}</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/#contact">Kontakt</a>
+              <a class="nav-link" href="/#contact"
+                >{{ site.data[page.lang].strings.contact }}</a
+              >
             </li>
             {% if site.posts.size > 0 %}
             <li class="nav-item">
-              <a class="nav-link" href="/blog">Blog</a>
+              <a class="nav-link" href="/blog"
+                >{{ site.data[page.lang].strings.blog }}</a
+              >
             </li>
             {% endif %}
             <li class="nav-item">
               <a
                 class="btn btn-outline-light ms-2 phone-button"
                 href="tel:{{ site.data.landing.phone }}"
-                >📞 <strong>Telefon:</strong> {{ site.data.landing.phone }}</a
+                >📞
+                <strong>{{ site.data[page.lang].strings.phone }}:</strong> {{
+                site.data.landing.phone }}</a
               >
             </li>
           </ul>
         </div>
       </div>
     </nav>
-
     {{ content }}
     <a href="#" class="position-fixed bottom-0 end-0 m-3" id="backToTop">▲</a>
 

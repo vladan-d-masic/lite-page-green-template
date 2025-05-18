@@ -2,6 +2,7 @@
 layout: default
 title: Blog
 paginate: true
+lang: sr
 ---
 
 <style>
@@ -48,7 +49,7 @@ paginate: true
 </style>
 
 <section class="container my-5 single-post">
-  <h1 class="my-5">Poslednji postovi</h1>
+  <h1 class="my-5">{{ site.data[page.lang].strings.last_posts }}</h1>
 
   <ul class="list-unstyled">
     {% assign index_mod = 0 %} {% for post in paginator.posts %} {% assign
@@ -74,17 +75,19 @@ paginate: true
   </ul>
 
   <p class="text-muted text-center my-4">
-    Postovi
+    {{ site.data[page.lang].strings.posts }}
     <strong>
       {{ paginator.page | minus: 1 | times: paginator.per_page | plus: 1 }} – {{
       paginator.page | times: paginator.per_page | at_most:
       paginator.total_posts }}
     </strong>
-    od ukupno <strong>{{ paginator.total_posts }}</strong>
+    {{ site.data[page.lang].strings.of_the_total }}
+    <strong>{{ paginator.total_posts }}</strong>
   </p>
 
   <p class="text-center text-muted mb-2">
-    Strana {{ paginator.page }} od {{ paginator.total_pages }}
+    {{ site.data[page.lang].strings.page }} {{ paginator.page }} {{
+    site.data[page.lang].strings.of }} {{ paginator.total_pages }}
   </p>
 
   <nav aria-label="Pagination">
@@ -96,7 +99,7 @@ paginate: true
           href="{{ paginator.previous_page_path }}"
           aria-label="Previous"
         >
-          &laquo; Prethodna
+          &laquo; {{ site.data[page.lang].strings.previous}}
         </a>
       </li>
       {% endif %} {% for page in (1..paginator.total_pages) %}
@@ -114,7 +117,7 @@ paginate: true
           href="{{ paginator.next_page_path }}"
           aria-label="Next"
         >
-          Sledeća &raquo;
+          {{ site.data[page.lang].strings.next }} &raquo;
         </a>
       </li>
       {% endif %}

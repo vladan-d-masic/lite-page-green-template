@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Poljoprivredni proizvodi
+lang: sr
+permalink: /
 ---
 
 <style>
@@ -25,7 +27,7 @@ title: Poljoprivredni proizvodi
 </style>
 
 <section id="products" class="splide container my-5 hidden-section" aria-label="Slide Container Example">
-  <h2 class="text-center mb-4">{{ site.data.i18n.sr.our_products }}</h2>
+  <h2 class="text-center mb-4">{{ site.data[page.lang].strings.our_products }}</h2>
   <div class="splide__track">
     <ul class="splide__list">
       {% for image in site.data.landing.images %}
@@ -50,7 +52,7 @@ title: Poljoprivredni proizvodi
   </div>
 </section>
 <section id="contact" class="container my-5 hidden-section">
-  <h2 class="text-center mb-4">{{ site.data.i18n.sr.contact_us }}</h2>
+  <h2 class="text-center mb-4">{{ site.data[page.lang].strings.contact_us }}</h2>
   <div class="row">
     <div class="col-md-6">
       <iframe
@@ -62,13 +64,13 @@ title: Poljoprivredni proizvodi
     </div>
     <div class="col-md-6">
       <p class="mb-2">
-        <strong>Adresa:</strong> {{ site.data.landing.address }}
+        <strong>{{ site.data[page.lang].strings.address }}:</strong> {{ site.data.landing.address }}
       </p>
       <p class="mb-2">
-        <strong>Telefon:</strong> {{ site.data.landing.phone }}
+        <strong>{{ site.data[page.lang].strings.phone }}:</strong> {{ site.data.landing.phone }}
       </p>
-      <p class="mb-2"><strong>Email:</strong> {{ site.data.landing.email }}</p>
-      <p class="mb-2"><strong>Radno vreme:</strong></p>
+      <p class="mb-2"><strong>{{ site.data[page.lang].strings.email }}:</strong> {{ site.data.landing.email }}</p>
+      <p class="mb-2"><strong>{{ site.data[page.lang].strings.working_hours }}:</strong></p>
       <ul class="p-0">
         {% for working_hour in site.data.landing.working_hours %}
         <li class="py-1">{{ working_hour }}</li>

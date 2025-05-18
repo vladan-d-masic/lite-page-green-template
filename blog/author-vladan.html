@@ -3,6 +3,7 @@ layout: default
 title: Posts by Vladan
 paginate: true
 permalink: /blog/author/vladan/
+lang: sr
 ---
 
 <style>
@@ -52,7 +53,7 @@ permalink: /blog/author/vladan/
 'Vladan'" %}
 
 <section class="container my-5 single-post">
-  <h1 class="my-5">Postovi autora Vladan</h1>
+  <h1 class="my-5">{{ site.data[page.lang].strings.posts_by_vladan }}</h1>
 
   <ul class="list-unstyled">
     {% for post in author_posts %} {% assign index_mod = forloop.index0 |
