@@ -1,6 +1,7 @@
 const toggleButton = document.getElementById("darkModeToggle");
 
-if (localStorage.getItem("theme") === "dark") {
+const isDark = new URLSearchParams(location.search).get('theme') === 'dark';
+if (isDark || (localStorage.getItem("theme") === "dark")) {
   document.body.setAttribute("data-bs-theme", "dark");
   toggleButton.textContent = "☀️";
 }
