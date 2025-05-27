@@ -2,6 +2,8 @@
 layout: post
 authors: ["Dule"]
 title: "O platformi"
+description: "Ovo je prvi blog post na ovom websajtu i sluzi samo kao test uzorak."
+image: /assets/images/theme/default-tomato_juice.webp
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit, mi ac vehicula tristique, augue tortor viverra purus, ac tristique nulla felis ut dui. Praesent accumsan tincidunt erat bibendum consequat. Duis vitae nisi sed urna lacinia tincidunt sed ut tortor. Etiam ultricies non orci eget tempor. Fusce posuere magna vitae arcu sollicitudin scelerisque. Fusce blandit neque nec velit imperdiet, a eleifend dui efficitur. Quisque ut quam congue, blandit ante at, faucibus augue. Mauris vel ultrices purus, ut tempor nulla. Mauris consectetur felis odio, et blandit urna ultrices in. Phasellus quis risus et nunc lobortis suscipit. Nulla in mi at urna porttitor eleifend non fringilla sapien. Praesent at egestas elit. In pulvinar nunc enim, ac laoreet metus laoreet sed. Quisque sodales leo nunc, a cursus magna maximus sit amet.

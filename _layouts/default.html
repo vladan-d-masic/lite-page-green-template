@@ -37,6 +37,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         }
       {% endif %}
     </style>
+    {% seo %}
   </head>
 
   <body class="parallax-bg">
@@ -79,7 +80,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       style="background: url('{{ site.data.theme.header_background_image | relative_url }}') center/cover no-repeat;"
     >
       <div class="header-overlay p-4">
-        <h1 class="mb-3">{{ site.data.lang[site.lang].welcome_to_our_store }}</h1>
+        <h1 class="mb-3">
+          {{ site.data.lang[site.lang].welcome_to_our_store }}
+        </h1>
         <p class="lead" style="position: relative; z-index: 1">
           {{ site.data.lang[site.lang].fresh_produce }}
         </p>
@@ -118,7 +121,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             </li>
             {% if site.posts.size > 0 %}
             <li class="nav-item">
-              <a class="nav-link" href="/blog">{{ site.data.lang[site.lang].blog }}</a>
+              <a class="nav-link" href="/blog"
+                >{{ site.data.lang[site.lang].blog }}</a
+              >
             </li>
             {% endif %}
             <li class="nav-item">
