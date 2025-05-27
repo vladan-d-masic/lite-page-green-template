@@ -3,7 +3,6 @@ layout: default
 title: Posts by Dule
 paginate: true
 permalink: /blog/author/dule/
-lang: sr
 ---
 
 <style>
@@ -53,7 +52,7 @@ lang: sr
 'Dule'" %}
 
 <section class="container my-5 single-post">
-  <h1 class="my-5">{{ site.data[page.lang].strings.posts_by_dule }}</h1>
+  <h1 class="my-5">{{ site.data.strings.posts_by_dule }}</h1>
 
   <ul class="list-unstyled">
     {% for post in author_posts %} {% assign index_mod = forloop.index0 |

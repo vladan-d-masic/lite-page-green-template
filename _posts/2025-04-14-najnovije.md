@@ -1,7 +1,6 @@
 ---
 layout: post
 authors: ["Vladan"]
-lang: sr
 ---
 
 Ut efficitur et urna non mattis. Pellentesque feugiat, ante luctus consectetur euismod, risus lorem porta felis, non sollicitudin nibh mi at sem. Aliquam erat volutpat. Donec tempor luctus maximus. Pellentesque vel dolor eu lacus euismod consequat. Curabitur lacinia molestie sem vel rhoncus. In at euismod neque, nec elementum magna. Suspendisse sagittis sapien nec sapien finibus, ac faucibus erat vestibulum. Aenean vestibulum arcu in consequat eleifend. Curabitur ultrices vehicula vehicula. Donec porttitor tortor vitae risus sollicitudin, ac convallis nisl ullamcorper. Fusce faucibus fringilla libero eget rhoncus. Donec tincidunt lectus vel porta faucibus. Nam ac vestibulum ex. Suspendisse cursus tristique magna at pharetra.

@@ -1,7 +1,6 @@
 ---
 layout: post
 authors: ["Dule", "Vladan"]
-lang: sr
 ---
 
 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In varius ante vel dolor consequat, sit amet imperdiet ex lacinia. Duis ac ante risus. Integer laoreet molestie ante, vel suscipit ante consequat ac. Vestibulum at lectus facilisis, commodo diam at, finibus orci. Nullam sagittis velit lorem, et fringilla ligula lacinia sit amet. Nunc gravida eu ipsum at mollis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla lacus felis, venenatis a ex ac, porta congue quam. Donec hendrerit ipsum ac felis cursus scelerisque. Etiam nunc sem, maximus ut convallis id, pretium quis metus. Donec dignissim sagittis ipsum, sit amet cursus quam ullamcorper eu. Integer efficitur nunc eu risus vulputate blandit non et neque. Fusce euismod fringilla vestibulum. Aliquam at ex et urna sagittis luctus ac nec nunc.

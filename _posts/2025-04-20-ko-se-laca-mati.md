@@ -1,7 +1,6 @@
 ---
 layout: post
 authors: ["Dule"]
-lang: sr
 ---
 
 Donec ac pretium nunc. Ut quis quam id eros luctus mattis. Donec vel arcu bibendum, vehicula purus quis, lobortis mi. Suspendisse bibendum nulla felis, et ornare justo semper sit amet. Integer gravida lacus sit amet justo iaculis ornare. Aenean ultricies urna non nulla pharetra, sit amet dapibus ligula tempus. Nulla facilisi. Phasellus a molestie augue, eget consequat dui. Vestibulum malesuada pretium eros ut tincidunt. Nulla facilisi. Nunc lacinia blandit dolor, ut euismod sem elementum vel.

@@ -2,7 +2,6 @@
 layout: post
 authors: ["Vladan"]
 title: "Novo na platformi"
-lang: sr
 ---
 
 Praesent sapien magna, euismod in tincidunt imperdiet, finibus volutpat velit. Nulla facilisi. Suspendisse non urna dignissim, posuere mi ac, congue libero. Cras ligula purus, accumsan in felis quis, placerat ornare ligula. Morbi vestibulum, ligula nec efficitur pellentesque, nisi nisl facilisis leo, eget scelerisque est nisl vitae leo. Fusce nunc augue, cursus nec condimentum a, tincidunt et erat. Praesent dapibus, enim sit amet tristique ornare, nisi magna cursus sem, ut consectetur purus purus et dolor. Cras tempus vestibulum elit, vel semper dolor. Aenean urna orci, volutpat nec euismod eu, hendrerit et ligula.

@@ -1,7 +1,6 @@
 ---
 layout: post
 authors: ["Dule"]
-lang: sr
 ---
 
 Nam egestas enim magna, eu blandit purus sodales sit amet. Aliquam nec scelerisque nisl. Maecenas in augue eget nulla egestas volutpat. Donec ut quam faucibus, elementum massa et, efficitur eros. Aenean gravida commodo urna sit amet laoreet. Integer convallis scelerisque sem sit amet tempus. Vestibulum congue vitae lacus nec iaculis. Donec ullamcorper aliquet lectus at pulvinar. Mauris fringilla congue tellus, ac pharetra risus vehicula sed. Mauris commodo, nibh vitae gravida accumsan, ex elit tempor velit, in commodo libero leo a dolor.

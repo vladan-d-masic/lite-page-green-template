@@ -2,7 +2,6 @@
 layout: default
 title: Blog
 paginate: true
-lang: sr
 ---
 
 <style>
@@ -49,7 +48,7 @@ lang: sr
 </style>
 
 <section class="container my-5 single-post">
-  <h1 class="my-5">{{ site.data[page.lang].strings.last_posts }}</h1>
+  <h1 class="my-5">{{ site.data.strings.last_posts }}</h1>
 
   <ul class="list-unstyled">
     {% assign index_mod = 0 %} {% for post in paginator.posts %} {% assign
@@ -75,19 +74,19 @@ lang: sr
   </ul>
 
   <p class="text-muted text-center my-4">
-    {{ site.data[page.lang].strings.posts }}
+    {{ site.data.strings.posts }}
     <strong>
       {{ paginator.page | minus: 1 | times: paginator.per_page | plus: 1 }} – {{
       paginator.page | times: paginator.per_page | at_most:
       paginator.total_posts }}
     </strong>
-    {{ site.data[page.lang].strings.of_the_total }}
+    {{ site.data.strings.of_the_total }}
     <strong>{{ paginator.total_posts }}</strong>
   </p>
 
   <p class="text-center text-muted mb-2">
-    {{ site.data[page.lang].strings.page }} {{ paginator.page }} {{
-    site.data[page.lang].strings.of }} {{ paginator.total_pages }}
+    {{ site.data.strings.page }} {{ paginator.page }} {{ site.data.strings.of }}
+    {{ paginator.total_pages }}
   </p>
 
   <nav aria-label="Pagination">
@@ -99,7 +98,7 @@ lang: sr
           href="{{ paginator.previous_page_path }}"
           aria-label="Previous"
         >
-          &laquo; {{ site.data[page.lang].strings.previous}}
+          &laquo; {{ site.data.strings.previous}}
         </a>
       </li>
       {% endif %} {% for page in (1..paginator.total_pages) %}
@@ -117,7 +116,7 @@ lang: sr
           href="{{ paginator.next_page_path }}"
           aria-label="Next"
         >
-          {{ site.data[page.lang].strings.next }} &raquo;
+          {{ site.data.strings.next }} &raquo;
         </a>
       </li>
       {% endif %}
