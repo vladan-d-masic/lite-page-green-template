@@ -79,9 +79,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       style="background: url('{{ site.data.theme.header_background_image | relative_url }}') center/cover no-repeat;"
     >
       <div class="header-overlay p-4">
-        <h1 class="mb-3">{{ site.data.strings.welcome_to_our_store }}</h1>
+        <h1 class="mb-3">{{ site.data.lang[site.lang].welcome_to_our_store }}</h1>
         <p class="lead" style="position: relative; z-index: 1">
-          {{ site.data.strings.fresh_produce }}
+          {{ site.data.lang[site.lang].fresh_produce }}
         </p>
       </div>
     </header>
@@ -108,25 +108,25 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             {% endif %}
             <li class="nav-item">
               <a class="nav-link" href="/#products"
-                >{{ site.data.strings.our_products }}</a
+                >{{ site.data.lang[site.lang].our_products }}</a
               >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/#contact"
-                >{{ site.data.strings.contact }}</a
+                >{{ site.data.lang[site.lang].contact }}</a
               >
             </li>
             {% if site.posts.size > 0 %}
             <li class="nav-item">
-              <a class="nav-link" href="/blog">{{ site.data.strings.blog }}</a>
+              <a class="nav-link" href="/blog">{{ site.data.lang[site.lang].blog }}</a>
             </li>
             {% endif %}
             <li class="nav-item">
               <a
                 class="btn btn-outline-light ms-2 phone-button"
-                href="tel:{{ site.data.landing.phone }}"
-                >📞 <strong>{{ site.data.strings.phone }}:</strong> {{
-                site.data.landing.phone }}</a
+                href="tel:{{ site.data.about.phone }}"
+                >📞 <strong>{{ site.data.lang[site.lang].phone }}:</strong> {{
+                site.data.about.phone }}</a
               >
             </li>
           </ul>

@@ -1,6 +1,4 @@
-{% assign theme = site.ui.color_theme %} {% assign palette =
-site.data.colors.palettes[theme] %}
-
+{% assign palette = site.data.theme_config.palettes[site.data.theme.selected_palette] %}
 <style>
   :root {
     --primary-color: {{ palette.primary }};

@@ -2,6 +2,44 @@
 layout: default
 title: Poljoprivredni proizvodi
 permalink: /
+images:
+  - url: "/assets/images/theme/default-apples.webp"
+    alt: "Jabuke"
+  - url: "/assets/images/theme/default-lettuce.webp"
+    alt: "Zelena salata"
+  - url: "/assets/images/theme/default-tomato_juice.webp"
+    alt: "Mleveni paradajz"
+address: Ulica Poljoprivrednika 12, Beograd, Srbija
+phone: +381 64 123 4567
+email: info@poljoprivreda.rs
+working_hours:
+  - "Ponedeljak - Petak: 08:00 - 18:00"
+  - "Subota: 08:00 - 14:00"
+  - "Nedelja: Zatvoreno"
+
+_schema:
+  images:
+    - url:
+        type: image_field
+        label: Slika u slajderu
+      alt:
+        type: text_field
+        label: Alt za SEO
+  address:
+    type: text_field
+    label: Adresa
+  phone:
+    type: text_field
+    label: Telefon
+  email:
+    type: text_field
+    label: Imejl
+  working_hours_work_days:
+    type: text_field
+    label: Imejl
+  working_hours:
+    - type: text_field
+      label: Radno vreme
 ---
 
 <style>
@@ -26,10 +64,10 @@ permalink: /
 </style>
 
 <section id="products" class="splide container my-5 hidden-section" aria-label="Slide Container Example">
-  <h2 class="text-center mb-4">{{ site.data.strings.our_products }}</h2>
+  <h2 class="text-center mb-4">{{ site.data.lang[site.lang].our_products }}</h2>
   <div class="splide__track">
     <ul class="splide__list">
-      {% for image in site.data.landing.images %}
+      {% for image in page.images %}
       <li class="splide__slide text-center carousel-item">
         <img
           src="{{ site.baseurl }}{{ image.url }}"
@@ -51,7 +89,7 @@ permalink: /
   </div>
 </section>
 <section id="contact" class="container my-5 hidden-section">
-  <h2 class="text-center mb-4">{{ site.data.strings.contact_us }}</h2>
+  <h2 class="text-center mb-4">{{ site.data.lang[site.lang].contact_us }}</h2>
   <div class="row">
     <div class="col-md-6">
       <iframe
@@ -63,15 +101,15 @@ permalink: /
     </div>
     <div class="col-md-6">
       <p class="mb-2">
-        <strong>{{ site.data.strings.address }}:</strong> {{ site.data.landing.address }}
+        <strong>{{ site.data.lang[site.lang].address }}:</strong> {{ page.address }}
       </p>
       <p class="mb-2">
-        <strong>{{ site.data.strings.phone }}:</strong> {{ site.data.landing.phone }}
+        <strong>{{ site.data.lang[site.lang].phone }}:</strong> {{ page.phone }}
       </p>
-      <p class="mb-2"><strong>{{ site.data.strings.email }}:</strong> {{ site.data.landing.email }}</p>
-      <p class="mb-2"><strong>{{ site.data.strings.working_hours }}:</strong></p>
+      <p class="mb-2"><strong>{{ site.data.lang[site.lang].email }}:</strong> {{ page.email }}</p>
+      <p class="mb-2"><strong>{{ site.data.lang[site.lang].working_hours }}:</strong></p>
       <ul class="p-0">
-        {% for working_hour in site.data.landing.working_hours %}
+        {% for working_hour in page.working_hours %}
         <li class="py-1">{{ working_hour }}</li>
         {% endfor %}
       </ul>

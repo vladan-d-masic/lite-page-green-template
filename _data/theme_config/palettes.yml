@@ -1,0 +1,223 @@
+green:
+  primary: "#5D8736"
+  secondary: "#809D3C"
+  accent: "#A9C46C"
+  background: "#F4FFC3"
+  text: "#333333"
+
+cherry-blossom:
+  primary: "#FC4F4F"
+  secondary: "#FC7477"
+  accent: "#FFB6B9"
+  background: "#FFF2F2"
+  text: "#333333"
+
+strawberry:
+  primary: "#D62828"
+  secondary: "#E63946"
+  accent: "#FF6F61"
+  background: "#FFF5F5"
+  text: "#333333"
+
+wine:
+  primary: "#800020"
+  secondary: "#A52A2A"
+  accent: "#C1440E"
+  background: "#FDEBEC"
+  text: "#333333"
+
+blue:
+  primary: "#5409DA"
+  secondary: "#4E71FF"
+  accent: "#8DD8FF"
+  background: "#BBFBFF"
+  text: "#333333"
+
+blue-green:
+  primary: "#205781"
+  secondary: "#4F959D"
+  accent: "#98D2C0"
+  background: "#F6F8D5"
+  text: "#333333"
+
+purple:
+  primary: "#AA60C8"
+  secondary: "#D69ADE"
+  accent: "#EABDE6"
+  background: "#FFDFEF"
+  text: "#333333"
+
+navy-teal-beige:
+  primary: "#27445D"
+  secondary: "#497D74"
+  accent: "#71BBB2"
+  background: "#EFE9D5"
+  text: "#333333"
+
+black-maroon:
+  primary: "#09122C"
+  secondary: "#872341"
+  accent: "#BE3144"
+  background: "#E17564"
+  text: "#333333"
+
+orange:
+  primary: "#EB5A3C"
+  secondary: "#DF9755"
+  accent: "#E7D283"
+  background: "#EDF4C2"
+  text: "#333333"
+
+grey-sage:
+  primary: "#727D73"
+  secondary: "#AAB99A"
+  accent: "#D0DDD0"
+  background: "#F0F0D7"
+  text: "#333333"
+
+dark-purple:
+  primary: "#441752"
+  secondary: "#8174A0"
+  accent: "#A888B5"
+  background: "#EFB6C8"
+  text: "#333333"
+
+dark-green:
+  primary: "#123524"
+  secondary: "#3E7B27"
+  accent: "#85A947"
+  background: "#EFE3C2"
+  text: "#333333"
+
+sage:
+  primary: "#4B5945"
+  secondary: "#66785F"
+  accent: "#91AC8F"
+  background: "#B2C9AD"
+  text: "#333333"
+
+brownish-yellow:
+  primary: "#A86523"
+  secondary: "#E9A319"
+  accent: "#FAD59A"
+  background: "#FCEFCB"
+  text: "#333333"
+
+grey-beige:
+  primary: "#A59D84"
+  secondary: "#C1BAA1"
+  accent: "#D7D3BF"
+  background: "#ECEBDE"
+  text: "#333333"
+
+black-grey-beige:
+  primary: "#222831"
+  secondary: "#393E46"
+  accent: "#948979"
+  background: "#DFD0B8"
+  text: "#333333"
+
+sage-yellow:
+  primary: "#B2B377"
+  secondary: "#D2D180"
+  accent: "#E5E483"
+  background: "#F1F5A8"
+  text: "#333333"
+
+golden-brown:
+  primary: "#A86523"
+  secondary: "#E9A319"
+  accent: "#FAD59A"
+  background: "#FCEFCB"
+  text: "#333333"
+
+blue-greyish-beige:
+  primary: "#405D72"
+  secondary: "#758694"
+  accent: "#F7E7DC"
+  background: "#FFF8F3"
+  text: "#333333"
+
+black-maroonish-yellow:
+  primary: "#343131"
+  secondary: "#A04747"
+  accent: "#D8A25E"
+  background: "#EEDF7A"
+  text: "#333333"
+
+maroon-orange:
+  primary: "#7C444F"
+  secondary: "#9F5255"
+  accent: "#E16A54"
+  background: "#F39E60"
+  text: "#333333"
+
+bluish-grey-beige:
+  primary: "#4C585B"
+  secondary: "#7E99A3"
+  accent: "#A5BFCC"
+  background: "#F4EDD3"
+  text: "#333333"
+
+sage-brownish-grey:
+  primary: "#706D54"
+  secondary: "#A08963"
+  accent: "#C9B194"
+  background: "#DBDBDB"
+  text: "#333333"
+
+purple-pinkish:
+  primary: "#433878"
+  secondary: "#7E60BF"
+  accent: "#E4B1F0"
+  background: "#FFE1FF"
+  text: "#333333"
+
+black-greyish-beige:
+  primary: "#181C14"
+  secondary: "#3C3D37"
+  accent: "#697565"
+  background: "#ECDFCC"
+  text: "#333333"
+
+blue-gray-pastel:
+  primary: "#89A8B2"
+  secondary: "#B3C8CF"
+  accent: "#E5E1DA"
+  background: "#F1F0E8"
+  text: "#333333"
+
+black-maroon-purple:
+  primary: "#1A1A1D"
+  secondary: "#3B1C32"
+  accent: "#6A1E55"
+  background: "#A64D79"
+  text: "#333333"
+
+greyish-sage-beige:
+  primary: "#727D73"
+  secondary: "#AAB99A"
+  accent: "#D0DDD0"
+  background: "#F0F0D7"
+  text: "#333333"
+
+sage-peach-beige:
+  primary: "#CCD5AE"
+  secondary: "#E0E5B6"
+  accent: "#FAEDCE"
+  background: "#FEFAE0"
+  text: "#333333"
+
+purple-pinkish-yellow:
+  primary: "#CB9DF0"
+  secondary: "#F0C1E1"
+  accent: "#FDDBBB"
+  background: "#FFF9BF"
+  text: "#333333"
+
+bluish-teal-grey:
+  primary: "#2E5077"
+  secondary: "#4DA1A9"
+  accent: "#79D7BE"
+  background: "#F6F4F0"
+  text: "#333333"

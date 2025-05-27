@@ -34,7 +34,6 @@ github_username: jekyll
 plugins:
   - jekyll-feed
   - jekyll-paginate
-  - jekyll-polyglot
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -60,10 +59,9 @@ paginate: 5
 paginate_path: "/blog/page:num/"
 
 languages: ["en"]
-default_lang: "sr"
+lang: "sr"
 exclude_from_localization: ["javascript", "images", "css", "public", "sitemap"]
 parallel_localization: true
 
 ui:
   show_darkmode_toggle: false
-  color_theme: "bluish-teal-grey" #options: green, cherry-blossom, strawberry, wine, blue, blue-green, purple, navy-teal-beige, black-maroon, orange, grey-sage, dark-purple, dark-green, sage, brownish-yellow, grey-beige, black-grey-beige, sage-yellow, golden-brown, blue-greyish-beige, black-maroonish-yellow, maroon-orange, bluish-grey-beige, sage-brownish-grey, purple-pinkish, black-greyish-beige, blue-gray-pastel, black-maroon-purple, greyish-sage-beige, sage-peach-beige, purple-pinkish-yellow, bluish-teal-grey
