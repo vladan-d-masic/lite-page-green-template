@@ -7,4 +7,4 @@ body_background_image_dark_default: /assets/images/theme/leaves-parallax-dark.we
 selected_palette: bluish-teal-grey
 
 _schema:
-  selected_palette: data_select-theme.palettes
+  selected_palette: data_select-theme_config.palettes
