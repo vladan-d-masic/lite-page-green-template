@@ -61,7 +61,7 @@ paginate: true
         <span class="fs-5 fw-normal post-meta">
           - {{ post.date | date: "%d.%m.%Y" }}, {% for author in post.authors %}
           <a
-            href="/blog/author/{{ author | downcase }}/"
+            href="{{ '/blog/author/' | append: author | downcase | append: '/' | relative_url }}"
             class="text-decoration-underline"
           >
             {{ author }} </a
@@ -85,8 +85,8 @@ paginate: true
   </p>
 
   <p class="text-center text-muted mb-2">
-    {{ site.data.lang[site.lang].page }} {{ paginator.page }} {{ site.data.lang[site.lang].of }}
-    {{ paginator.total_pages }}
+    {{ site.data.lang[site.lang].page }} {{ paginator.page }} {{
+    site.data.lang[site.lang].of }} {{ paginator.total_pages }}
   </p>
 
   <nav aria-label="Pagination">
@@ -105,9 +105,10 @@ paginate: true
       <li class="page-item {% if page == paginator.page %}active{% endif %}">
         <a
           class="page-link"
-          href="/blog/{% if page > 1 %}page{{ page }}/{% endif %}"
-          >{{ page }}</a
+          href="{% if page == 1 %}{{ '/blog/' | relative_url }}{% else %}{{ '/blog/page' | append: page | append: '/' | relative_url }}{% endif %}"
         >
+          {{ page }}
+        </a>
       </li>
       {% endfor %} {% if paginator.next_page %}
       <li class="page-item">

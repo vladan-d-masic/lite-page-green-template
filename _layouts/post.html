@@ -66,7 +66,7 @@ layout: default
     <p class="post-meta">
       {{ page.date | date: "%d.%m.%Y" }}, {% for author in page.authors %}
       <a
-        href="/blog/author/{{ author | downcase }}/"
+        href="{{ '/blog/author/' | append: author | downcase | append: '/' | relative_url }}"
         class="text-decoration-underline"
       >
         {{ author }} </a
