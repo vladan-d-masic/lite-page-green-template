@@ -30,14 +30,10 @@ permalink: /
   <div class="splide__track">
     <ul class="splide__list">
       {% for image in site.data.contact-info.images %}
-      <li class="splide__slide text-center carousel-item">
-        <img
-          src="{{ site.baseurl }}{{ image.url }}"
-          class="d-block mx-auto carousel-img"
-          alt="{{ image.alt }}"
-        />
-        <p class="mt-2 carousel-item-description">{{ image.alt }}</p>
-      </li>
+        <li class="splide__slide text-center carousel-item">
+          {% picture {{ image.url }} --img-attr='alt="{{ image.alt }}" class="d-block mx-auto carousel-img" loading="lazy"' %}
+          <p class="mt-2 carousel-item-description">{{ image.alt }}</p>
+        </li>
       {% endfor %}
     </ul>
     <div class="splide__arrows">
@@ -48,6 +44,7 @@ permalink: /
         <span class="carousel-control-next-icon p-4" aria-hidden="true"></span>
       </button>
     </div>
+
   </div>
 </section>
 <section id="contact" class="container my-5 hidden-section">

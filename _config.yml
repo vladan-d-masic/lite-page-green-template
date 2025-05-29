@@ -36,6 +36,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll_picture_tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -57,8 +58,20 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+# jekyll-paginate configuration
 paginate: 5
 paginate_path: "/blog/page:num/"
+
+# jekyll_picture_tag configuration
+picture:
+  source: assets/images/theme
+  output: assets/generated/theme
+  presets:
+    default:
+      widths: [320, 640, 960, 1280, 1500]
+      formats: [webp, original]
+      sizes: "(max-width: 1500px) 100vw, 1500px"
+      ignore_missing_images: true
 
 languages: ["en"]
 lang: "sr"
