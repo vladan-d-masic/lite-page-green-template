@@ -56,6 +56,16 @@ paginate: true
     'slide-in-left' %} {% if index_mod == 1 %} {% assign animation_class =
     'slide-in-right' %} {% endif %}
     <li class="hidden-section {{ animation_class }}">
+      <div class="mb-3">
+        {% if post.image %}
+        <a href="{{ post.url }}"
+          ><img
+            src="{{ post.image | relative_url }}"
+            alt="{{ post.title }}"
+            class="img-fluid rounded shadow-sm w-50 d-block mx-auto"
+        /></a>
+        {% endif %}
+      </div>
       <h2>
         <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
         <span class="fs-5 fw-normal post-meta">
@@ -70,6 +80,7 @@ paginate: true
       </h2>
       {{ post.excerpt }}
     </li>
+
     {% endfor %}
   </ul>
 
