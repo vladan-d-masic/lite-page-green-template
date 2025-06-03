@@ -42,38 +42,6 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
   <body class="parallax-bg">
     {% include colors.html %}
-
-    <!-- <nav
-      class="navbar navbar-dark"
-      style="
-    border-radius: 0 0 40px 40px;
-    background: url('{{ site.data.theme.header_background_image | relative_url }}') center/cover no-repeat;
-    "
-    >
-      <div class="container-fluid">
-        <div>
-          <ul class="navbar-nav d-flex flex-row gap-4 nav">
-            <li class="nav-item">
-              <a class="nav-link" href="/lite-page-green-template/#/">Glavna</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="/lite-page-green-template/pricing.markdown"
-                >Cene</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/lite-page-green-template/blog.html"
-                >Blog</a
-              >
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#">Kontakt</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">O nama</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav> -->
     <header
       id="welcome"
       class="container text-center py-5 position-relative px-md-2"
@@ -173,6 +141,57 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         } else {
           backToTopBtn.classList.remove("show");
         }
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const navbar = document.getElementById("navbarNav");
+        const toggler = document.querySelector(".navbar-toggler");
+
+        function isNavbarOpen() {
+          return navbar.classList.contains("show");
+        }
+
+        function closeNavbar() {
+          if (isNavbarOpen()) {
+            toggler.click();
+          }
+        }
+
+        // 1 & 2. Click or Touch Outside to Collapse
+        document.addEventListener("click", handleOutsideClickOrTouch);
+        document.addEventListener("touchstart", handleOutsideClickOrTouch);
+
+        function handleOutsideClickOrTouch(e) {
+          const clickedInsideNavbar = navbar.contains(e.target);
+          const clickedToggler = toggler.contains(e.target);
+
+          if (!clickedInsideNavbar && !clickedToggler) {
+            closeNavbar();
+          }
+        }
+
+        // 3. ESC Key to Collapse
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape") {
+            closeNavbar();
+          }
+        });
+
+        // 4. Scroll to Collapse
+        let lastScrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+
+        window.addEventListener("scroll", function () {
+          const currentScroll =
+            window.pageYOffset || document.documentElement.scrollTop;
+
+          if (currentScroll !== lastScrollTop) {
+            closeNavbar();
+          }
+
+          lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+        });
       });
     </script>
   </body>
