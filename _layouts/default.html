@@ -158,7 +158,6 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           }
         }
 
-        // 1 & 2. Click or Touch Outside to Collapse
         document.addEventListener("click", handleOutsideClickOrTouch);
         document.addEventListener("touchstart", handleOutsideClickOrTouch);
 
@@ -171,14 +170,12 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           }
         }
 
-        // 3. ESC Key to Collapse
         document.addEventListener("keydown", function (e) {
           if (e.key === "Escape") {
             closeNavbar();
           }
         });
 
-        // 4. Scroll to Collapse
         let lastScrollTop =
           window.pageYOffset || document.documentElement.scrollTop;
 
